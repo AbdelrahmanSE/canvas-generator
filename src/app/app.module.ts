@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbCardModule, NbButtonModule } from '@nebular/theme';
 import { AppRoutingModule } from './app-routing.module';
 import { HistoryComponent } from './history/history.component';
 import { EditorComponent } from './editor/editor.component';
@@ -31,6 +31,8 @@ import { CanvasComponent } from './canvas/canvas.component';
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'default' }),
     NbLayoutModule,
+    NbCardModule,
+    NbButtonModule,
     AppRoutingModule
   ],
   providers: [],
